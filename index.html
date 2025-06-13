@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body> 
+
+    <header>
+      
+     <h2 class="yozuv1"> <span class="span1">N</span>urshod</h2>
+      
+   <div class="ateglar">
+      
+     <ul>
+       <a class="headerA" href="#about" onclick="event.preventDefault(); scrollToAbout();">About</a>
+       <a class="headerA" href="#experience" onclick="event.preventDefault(); scrollToExperience();">Experince</a>                                                                     
+       <a class="headerA" href="#contact" onclick="event.preventDefault(); scrollToContact();">Contact</a>
+      
+     </ul>  
+        
+
+      
+
+
+
+
+   </div>
+     
+   
+   <img id="lamp" src="https://img.freepik.com/premium-vector/street-lamp-logo-lantern-lamp-vector-lighting-classic-retro-design-silhouette-icon-premium-template_557439-10595.jpg" alt="Lampochka" width="60" style="cursor:pointer;">
+   
+   <button class="tugma">
+     Resume
+    </button>
+      
+    </header>
+
+
+      
+
+     
+
+     <section class="section2">
+      <h2 class="yozuv7">Hi, My name is</h2>
+      
+  <div class="typewriter">  
+    <h1 id="text"></h1>
+  </div>
+
+
+  
+  
+
+  <script>
+    const text = "Odiljonov Nurshod";
+    const speed = 100; // har bir harfni yozish vaqti (ms)
+    let i = 0;
+    
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+
+
+
+      <p class="yozuv9">Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br>
+         Dolor, voluptatum? Odio blanditiis, molestias alias possimus totam perferendis<br>
+          sit aliquid nulla dolorum laborum omnis laboriosam quis!<br></p>
+          <button class="tugma44">
+            Reach at me!
+          </button>
+
+         
+     </section> 
+
+     <section class="section3">
+            <div class="about-me">
+              
+              
+              
+              <script>
+                function scrollToAbout() {
+                  document.getElementById("about").scrollIntoView({ behavior: "smooth" }); 
+                }
+              </script>
+<!-- Menyu yoki tugma -->
+
+
+<!-- Pastroqda joylashgan About bo‘limi -->
+<div id="about" style="margin-top: 30px;">
+
+  <h3 class="yozuv2" onclick="scrollToAbout()">About Me</h3> 
+  <p class="yozuv3">I live in Urgut, I am currently learning<br>
+    html, css and javascript.
+    I still have many<br> dreams. I dream of learning python, MySQL, types<br><br>
+    cript,
+    tailwind css, flask in a few years and<br> I think this dream come true.<br>
+    Another goal of mine inWSS  the future <br>is to open my own company
+    <p class="yozuv4"> After starting to create<br> websites, I will earn money
+      and go abroad<br> to improve my English skills.<br>   
+      ipsam sed aut optio commodi? Tempora<br>
+      unde labore hic assumenda,<br>es that I need.
+  
+    </div>
+    
+  </div>  
+  
+  <img class="pictures" src="./photo_2025-06-12_09-21-16.jpg" alt="">
+
+</section>
+        
+
+
+         <!--Experince section -->
+            <section class="section4">
+              
+              
+              <!-- Pastroqda joylashgan Experience bo‘limi -->
+              <div id="experience">
+                
+                <!-- Menyudagi "Experience" tugmasi -->
+                <h1 onclick="scrollToExperience()">Experience</h1>
+                <p>I am currently developing many programs and<br>
+                 I believe that these programs will be <br>
+                 useful to me in the future. I have started<br>
+                  creating five or fewer websites a month.<br>
+                   I have started creating experienced websites.<br>
+                    I currently know more than seven hundred codes.<br></p>
+         </div>
+             </section>
+
+
+
+
+
+
+  <script>
+    // "Experience" bo‘limiga scroll qilish funksiyasi
+    function scrollToExperience() {
+      document.getElementById("experience").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>  
+<!-- Section yutuqlars -->
+   <section class="section5">
+            <h1 class="yozuv13">My achievements and experience</h1>
+            <div class="flex">
+              <div class="div12 animate-bottom">
+                <h2 class="yozuv14">70+<br>
+                  <span class="rangli12">
+                    web sites
+                  </span> 
+                </h2>
+              </div>
+
+           
+
+
+
+            <div class="div12 animate-bottom">
+              <h2 class="yozuv14">1+<br>
+                <span class="rangli12">
+                  years of experience
+                </span>
+              </h2>
+            </div>
+
+
+
+            <div class="div12 animate-bottom">
+              <h2 class="yozuv14">6+<br>
+                <span class="rangli12">
+                  my certificates
+                </span>
+              </h2>
+            </div>
+
+
+
+            <div class="div12 animate-bottom">
+              <h2 class="yozuv14">50+<br>
+                <span class="rangli12">
+                  my web sites
+                </span>
+              </h2>
+            </div>
+            </div>
+           
+          </section>
+
+
+
+
+          <section class="section6">
+            <h2 class="yozuv17">Why exactly people chose<br> programming</h2>
+            <div class="flex-berish">
+              <img class="photo1" src="https://images.ctfassets.net/7thvzrs93dvf/5XVr37qj2p9CtM0DBIyfCd/dc80b4cb37e0e2f27d8dc14e1c6a4c05/software_developer_job_description__all_key_roles___duties_main_image.jpg" alt="">
+              <div>
+                <h2 class="yozuv18">A suitable <span class="rangli13">profession</span> for you</h2>
+                <p class="yozuv19">Once you have mastered programming, you will be<br>
+                   able to earn money quickly and easily. The<br>
+                    workplaces of programmers are IT companies,<br>
+                     EPAM companies, banks and financial institutions.<br></p>
+              </div>
+            </div>
+          </section>
+
+
+
+
+          <section class="contact">
+            <h1 class="contact-me">Contact Me</h1>
+            <div class="contact-div1">
+              <a href="https://t.me/odiljonov_7010" target="_blank">
+                 <img class="telegram-img" src="https://avatars.mds.yandex.net/i?id=292733346c09d509777a3831d6e817662cdeca6a-5221595-images-thumbs&n=13" alt="Telegramga o'tish" style="width:190px;">
+              </a>
+              <div>
+                 <h2 class="contact-h2">My telegram to <br> contact me</h2>
+                 <p style="color: white; padding-top: 20px; line-height: 1.4; margin-right: 100px;">To access my telegram, search<br> Telegram
+                   for odiljonov_7010<br> or click on the telegram Image<br></p>
+              </div>
+
+
+                <a href="https://youtube.com/@ilmla_uz?si=bB9Cz386TBzly3GS">
+                  <img class="yutub-img" src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png  " alt="">
+                </a>
+                <div>
+                  <h2 class="contact-h2">My youtube to <br> contact me</h2>
+                  <p style="color: white; padding-top: 30px; line-height: 1.4;">do you want to follow my<br> vidios
+                     on our youtube<br> channel then sign up right now<br></p>
+                </div>
+
+
+                <a href="https://www.instagram.com/ilmla_uz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+                  <img class="instagram-img" src="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" alt="">
+                </a>
+                <div>
+                  <h2 class="contact-h22">My instagram to <br> contact me</h2>
+                  <p style="color: white; padding-top: 30px; line-height: 1.4;">Instagram account do you <br>want
+                     to log in to<br> it bisng on the instagram photo<br></p>
+                </div>
+
+
+                <a href="target="_blank href="mailto:odiljonovnurshod77@gmail.com">
+                  <img class="gmail-img" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="">
+                </a>
+                <div>
+                  <h2 style="padding-top: 47px; color: white;">My gmail to <br> contact me</h2>
+                  <p style="color: white; padding-top: 30px; line-height: 1.4;">This is my personal Gmail<br>
+                     with which you can<br> connect with me<br></p>
+                </div>
+              </div>
+
+          
+          </section>
+          
+
+
+
+
+      <section class="my-skills">
+            <h2 class="yozuv24">My <span class="skills">skills</span></h2>
+            <div class="wrapper">           
+                <div class="br">
+                <img class="photo-js" src="javascript-logo.svg" alt="">
+                <h2 class="js">JavaScript</h2>
+                </div>   
+                
+                
+                <div class="br">
+                <img class="photo-js" src="https://yuki-itclass.com/wp-content/uploads/2022/03/html5.png" alt="">
+                <h2 class="js2">HTML</h2>
+                </div>
+
+
+                <div class="br">
+                <img class="photo-js" src="https://img.icons8.com/fluent/512/css3.png" alt="">
+                <h2 class="js3">CSS</h2>
+                </div>
+          </div>
+         
+      </section>
+
+
+
+
+      <section class="projects">
+          <h2 class="pro">projects</h2>
+
+          <div class="flex-card3">
+
+          
+          <div class="br-ish">
+            <a href="./picture1.html">
+              <img class="img-wiev" src="https://i.vuzopedia.ru/storage/app/uploads/public/67a/dc2/574/67adc25749fd7792235715.png" alt="">
+            </a>
+            <h2 class="matn-card4s">ABONTOR</h2>
+            <p class="card-matn">This website was created for the English<br>
+            citizen</p>
+            <div class="tugmalar">
+              <button class="tugma-besh">HTML</button>
+              <button class="tugma-besh">CSS</button>
+              <button class="tugma-besh">JS</button>
+              <button class="tugma-besh">FIGMA</button>
+            </div>
+
+          </div>
+
+
+           <div class="br-ish">
+            <a href="./picture2.html">
+              <img class="img-wiev2" src="https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/e31a93a87ef64ff07c75254ecc067356fda0be1c" alt="">
+            </a>
+            <h2 class="matn-card4s">EASYBANK</h2>
+            <p class="card-matn">This website is a fast fud website but basically<br> a burger website is</p>
+            <div class="tugmalar">
+              <button class="tugma-besh">HTML</button>
+              <button class="tugma-besh">CSS</button>
+              <button class="tugma-besh">JS</button>
+              <button class="tugma-besh">FIGMA</button>
+            </div>
+          </div>
+
+
+
+           <div class="br-ish">
+            <a href="./picture3.html">
+                  <img class="width-ber" src="https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/f68c3ea5da2edf4c02f5462e0e2e04d887d06d86" alt="">
+            </a>
+            <h2 class="matn-card4s">MANAGE</h2>
+            <p class="card-matn">This website was built for the fact that the<br> English citizen began programming</p>
+            <div class="tugmalar">
+              <button class="tugma-besh">HTML</button>
+              <button class="tugma-besh">CSS</button>
+              <button class="tugma-besh">JS</button>
+              <button class="tugma-besh">FIGMA</button>
+            </div>
+          </div>
+
+
+
+           <div class="br-ish">
+            <a href="./picture4.html">
+              <img class="rasm-4-" src="https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/e4a721396879977963b07abcbabefb3989679c56" alt="">
+            </a>
+            <h2 class="matn-card4s">E-AUCTION</h2>
+            <p class="card-matn">This website is a fruit infringement<br> website</p>
+            <div class="tugmalar">
+              <button class="tugma-besh">HTML</button>
+              <button class="tugma-besh">CSS</button>
+              <button class="tugma-besh">JS</button>
+              <button class="tugma-besh">FIGMA</button>
+            </div>
+          </div>
+
+
+
+
+           <div class="br-ish">
+            <a href="./picture5.html">
+              <img class="minimalist-img" src="https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/9caffa0f17ca1efff33c8c5f2026cb6f030645f8" alt="">
+             </a>
+           <h2 class="matn-card4s">PORTFOLIO</h2>
+           <p class="card-matn">This website is a website created for<br> myself</p>
+           <div class="tugmalar">
+              <button class="tugma-besh">HTML</button>
+              <button class="tugma-besh">CSS</button>
+              <button class="tugma-besh">JS</button>
+              <button class="tugma-besh">FIGMA</button>
+            </div>
+          </div>
+
+
+
+
+
+
+           <div class="br-ish">
+            <a href="./picture6.html">
+              <img class="izlash" src="https://s3-figma-hubfile-images-production.figma.com/hub/file/carousel/img/1a5327235ab8832b7699597337de52c09f705a9f" alt="">  
+            </a>
+            <h2 class="matn-card4s">Coffeerosters</h2>
+            <p class="card-matn">This website is a website created for a famous person</p>
+            <div class="tugmalar">
+              <button class="tugma-besh">HTML</button>
+              <button class="tugma-besh">CSS</button>
+              <button class="tugma-besh">JS</button>
+              <button class="tugma-besh">FIGMA</button>
+            </div>
+          </div>
+
+
+          
+          </div>
+
+
+      </section>
+
+
+
+
+    
+
+
+
+
+
+       <footer class="futer">
+                <div class="li">
+
+
+
+<div class="footer-logo">
+                <div>
+                  <a href="/"><img class="logo1" src="./photos/Ilmla-logo.png" alt=""></a>
+                  <h2><a class="tel" href="tel:">+998910307010</a></h2>
+                  <div class="rang-ber">
+  
+                      <li class="katta"><a href="https://t.me/odiljonov_7010" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+                      <path d="M39.175,10.016c1.687,0,2.131,1.276,1.632,4.272c-0.571,3.426-2.216,14.769-3.528,21.83 c-0.502,2.702-1.407,3.867-2.724,3.867c-0.724,0-1.572-0.352-2.546-0.995c-1.32-0.872-7.984-5.279-9.431-6.314 c-1.32-0.943-3.141-2.078-0.857-4.312c0.813-0.796,6.14-5.883,10.29-9.842c0.443-0.423,0.072-1.068-0.42-1.068 c-0.112,0-0.231,0.034-0.347,0.111c-5.594,3.71-13.351,8.859-14.338,9.53c-0.987,0.67-1.949,1.1-3.231,1.1 c-0.655,0-1.394-0.112-2.263-0.362c-1.943-0.558-3.84-1.223-4.579-1.477c-2.845-0.976-2.17-2.241,0.593-3.457 c11.078-4.873,25.413-10.815,27.392-11.637C36.746,10.461,38.178,10.016,39.175,10.016 M39.175,7.016L39.175,7.016 c-1.368,0-3.015,0.441-5.506,1.474L33.37,8.614C22.735,13.03,13.092,17.128,6.218,20.152c-1.074,0.473-4.341,1.91-4.214,4.916 c0.054,1.297,0.768,3.065,3.856,4.124l0.228,0.078c0.862,0.297,2.657,0.916,4.497,1.445c1.12,0.322,2.132,0.478,3.091,0.478 c1.664,0,2.953-0.475,3.961-1.028c-0.005,0.168-0.001,0.337,0.012,0.507c0.182,2.312,1.97,3.58,3.038,4.338l0.149,0.106 c1.577,1.128,8.714,5.843,9.522,6.376c1.521,1.004,2.894,1.491,4.199,1.491c2.052,0,4.703-1.096,5.673-6.318 c0.921-4.953,1.985-11.872,2.762-16.924c0.331-2.156,0.603-3.924,0.776-4.961c0.349-2.094,0.509-4.466-0.948-6.185 C42.208,7.875,41.08,7.016,39.175,7.016L39.175,7.016z"></path>
+                      </svg></a></li>
+  
+  
+  
+                      <li class="katta"><a href="https://www.instagram.com/ilmla_uz?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="  target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 48 48">
+                      <path d="M 16.5 5 C 10.16639 5 5 10.16639 5 16.5 L 5 31.5 C 5 37.832757 10.166209 43 16.5 43 L 31.5 43 C 37.832938 43 43 37.832938 43 31.5 L 43 16.5 C 43 10.166209 37.832757 5 31.5 5 L 16.5 5 z M 16.5 8 L 31.5 8 C 36.211243 8 40 11.787791 40 16.5 L 40 31.5 C 40 36.211062 36.211062 40 31.5 40 L 16.5 40 C 11.787791 40 8 36.211243 8 31.5 L 8 16.5 C 8 11.78761 11.78761 8 16.5 8 z M 34 12 C 32.895 12 32 12.895 32 14 C 32 15.105 32.895 16 34 16 C 35.105 16 36 15.105 36 14 C 36 12.895 35.105 12 34 12 z M 24 14 C 18.495178 14 14 18.495178 14 24 C 14 29.504822 18.495178 34 24 34 C 29.504822 34 34 29.504822 34 24 C 34 18.495178 29.504822 14 24 14 z M 24 17 C 27.883178 17 31 20.116822 31 24 C 31 27.883178 27.883178 31 24 31 C 20.116822 31 17 27.883178 17 24 C 17 20.116822 20.116822 17 24 17 z"></path>
+                      </svg></a></li>
+  
+  
+                      <li class="katta"><a href="https://youtube.com/@ilmla_uz?si=bB9Cz386TBzly3GS" target="_blank"><svg id="youtube" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                      <path d="M 24.402344 9 C 17.800781 9 11.601563 9.5 8.300781 10.199219 C 6.101563 10.699219 4.199219 12.199219 3.800781 14.5 C 3.402344 16.898438 3 20.5 3 25 C 3 29.5 3.398438 33 3.898438 35.5 C 4.300781 37.699219 6.199219 39.300781 8.398438 39.800781 C 11.902344 40.5 17.898438 41 24.5 41 C 31.101563 41 37.097656 40.5 40.597656 39.800781 C 42.800781 39.300781 44.699219 37.800781 45.097656 35.5 C 45.5 33 46 29.402344 46.097656 24.902344 C 46.097656 20.402344 45.597656 16.800781 45.097656 14.300781 C 44.699219 12.101563 42.800781 10.5 40.597656 10 C 37.097656 9.5 31 9 24.402344 9 Z M 24.402344 11 C 31.601563 11 37.398438 11.597656 40.199219 12.097656 C 41.699219 12.5 42.898438 13.5 43.097656 14.800781 C 43.699219 18 44.097656 21.402344 44.097656 24.902344 C 44 29.199219 43.5 32.699219 43.097656 35.199219 C 42.800781 37.097656 40.800781 37.699219 40.199219 37.902344 C 36.597656 38.601563 30.597656 39.097656 24.597656 39.097656 C 18.597656 39.097656 12.5 38.699219 9 37.902344 C 7.5 37.5 6.300781 36.5 6.101563 35.199219 C 5.300781 32.398438 5 28.699219 5 25 C 5 20.398438 5.402344 17 5.800781 14.902344 C 6.101563 13 8.199219 12.398438 8.699219 12.199219 C 12 11.5 18.101563 11 24.402344 11 Z M 19 17 L 19 33 L 33 25 Z M 21 20.402344 L 29 25 L 21 29.597656 Z"></path>
+                      </svg></a></li>
+                      
+                      <li class="katta"><a target="_blank" href="mailto:odiljonovnurshod77@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="40" height="40" viewBox="0 0 50 50">
+                      <path d="M 43.7 53906 6.4023438 C 42.53621 6.3489969 41.294792 6.712898 40.271484 7.46875 L 37.525391 9.4960938 L 25 18.755859 L 12.591797 9.5839844 A 1.0001 1.0001 0 0 0 11.949219 9.3007812 L 12.199219 9.3007812 L 9.734375 7.4765625 C 8.7104042 6.7188363 7.4671493 6.3528895 6.2480469 6.40625 C 5.0289444 6.4596105 3.8349462 6.9314667 2.9082031 7.8457031 C 1.7309454 9.0063798 1 10.629831 1 12.410156 L 1 15.84375 A 1.0001 1.0001 0 0 0 1 16.138672 L 1 39.5 C 1 41.421188 2.5788117 43 4.5 43 L 12 43 A 1.0001 1.0001 0 0 0 13 42 L 13 25.373047 L 24.40625 33.804688 A 1.0001 1.0001 0 0 0 25.59375 33.804688 L 37 25.373047 L 37 42 A 1.0001 1.0001 0 0 0 38 43 L 45.5 43 C 47.421188 43 49 41.421188 49 39.5 L 49 16.119141 A 1.0001 1.0001 0 0 0 49 15.859375 L 49 12.410156 C 49 10.6517 48.290455 9.0357821 47.128906 7.8730469 C 47.095336 7.8394769 47.084086 7.83018 47.097656 7.84375 A 1.0001 1.0001 0 0 0 47.091797 7.8378906 C 46.165242 6.9256756 44.971603 6.4556905 43.753906 6.4023438 z M 43.644531 8.4003906 C 44.400835 8.4300436 45.134049 8.7168876 45.689453 9.2636719 C 45.708363 9.2823439 45.722171 9.2964424 45.712891 9.2871094 C 46.50934 10.084374 47 11.188613 47 12.410156 L 47 15.496094 L 39 21.408203 L 39 11 A 1.0001 1.0001 0 0 0 38.996094 10.898438 L 41.458984 9.078125 A 1.0001 1.0001 0 0 0 41.460938 9.078125 C 42.109578 8.598977 42.888228 8.3707375 43.644531 8.4003906 z M 6.3574219 8.40625 C 7.1145694 8.37661 7.8958927 8.6037105 8.5449219 9.0839844 L 11.003906 10.902344 A 1.0001 1.0001 0 0 0 11 11 L 11 21.408203 L 3 15.496094 L 3 12.410156 C 3 11.174482 3.5017577 10.068855 4.3125 9.2695312 C 4.8677569 8.7217677 5.6002743 8.4358895 6.3574219 8.40625 z M 37 12.371094 L 37 22.886719 L 25 31.755859 L 13 22.886719 L 13 12.373047 L 24.40625 20.804688 A 1.0001 1.0001 0 0 0 25.59375 20.804688 L 37 12.371094 z M 3 17.982422 L 11 23.896484 L 11 41 L 4.5 41 C 3.6591883 41 3 40.340812 3 39.5 L 3 17.982422 z M 47 17.982422 L 47 39.5 C 47 40.340812 46.340812 41 45.5 41 L 39 41 L 39 23.896484 L 47 17.982422 z"></path>
+                      </svg></a></li>
+                      
+                  </div>
+                  
+                </div>
+                
+               
+            </div>  
+
+          </footer>
+
+
+
+          
+
+
+  <script src="fanar.js"></script>
+
+
+  <script>
+    const lamp = document.getElementById('lamp');
+    let isDark = false;
+
+    lamp.addEventListener('click', () => {
+      if (!isDark) {
+        document.body.style.backgroundColor = '#343a40';
+        document.body.style.color = 'white';
+      } else {
+        document.body.style.backgroundColor = 'black';
+        document.body.style.color = 'black';
+      }
+      isDark = !isDark;
+    });
+  </script>
+
+
+
+
+ 
+<script src="portfolio.js"></script>
+
+
+
+</body>
+</html>
