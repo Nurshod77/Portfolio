@@ -4,6 +4,22 @@
     padding: 0%;
     box-sizing: border-box;
 }
+.link-sheet {
+    border-radius: 50px;
+    background-size: cover;
+    background-position: center;
+}
+
+#spotlight {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 80%);
+  transform: translate(-50%, -50%);
+  mix-blend-mode: color;
+}
 .footer-logo {
     display: flex;
     gap: 600px;
@@ -26,9 +42,13 @@
       width: 60px;
       background: none;
       user-select: none;
-      height: 55px;
+      height: 57px;
       transition: transform 0.2s;
       border-radius: 10px;
+    }
+    .show {
+        background: none;
+        display: none;
     }
 
     #lamp:active {
@@ -132,14 +152,66 @@ ul {
     margin-top: 180px;
 }
 .section3 {
-        width: 1200px;
-        gap: 100px;
-        height: 750px;
         justify-content: center;
-        
         margin-top: 100px;
         animation: slideFromLeft 5s ease-out forwards;
         opacity: 0;
+        margin-left: 60px;
+        height: 800px;
+        display: flex;
+        gap: 150px;
+        align-items: center;
+        font-size: 3em;
+        transition: transform 1s ease, opacity 1s ease;
+}
+
+.image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.image-wrapper img {
+    display: block;
+    width: 350px;
+    height: 430px;
+    border-radius: 15px;
+    transition: transform 0.6s ease;
+}
+
+.border-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  animation: borderMove 1s linear infinite;
+  background: linear-gradient(90deg, gray, black, white, green, white);
+  background-size: 350% 350%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  padding: 2px;
+}
+
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 400% 50%;
+  }
+}
+
+.hidden {
+    transform: translateY(100px);
+    opacity: 0;
+}
+.visible {
+    transform: translateY(0);
+    opacity: 1;
 }
 .yozuv7 {
     color: #4cc9f0;
@@ -369,17 +441,6 @@ ul {
     flex-wrap: wrap;
     justify-content: center;
 }
-.pictures {
-    width: 350px;
-    height: 450px;
-    border-radius: 15px;
-    transition: transform 0.6s ease;
-}
-
-.pictures:hover {
-    transform: rotate(360deg);
-}
-
 .my-skills {
     padding: 40px 100px;
     padding-bottom: 250px;
@@ -476,9 +537,6 @@ ul {
     padding-top: 20px;
     margin-bottom: 20px;
     font-size: 18px;
-}
-.section3 {
-    display: flex;
 }
 .matn-card4 {
     color: white;
@@ -823,6 +881,7 @@ body.dark-mode {
       pointer-events: none;
     }
 
+
     @keyframes borderMove {
       0% {
         border-top: 5px solid #4cc9f0;
@@ -848,6 +907,122 @@ body.dark-mode {
       }
     }
 
+
+     .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .column {
+        flex: 1 1 300px;
+        max-width: 100%;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+    
+
 .telegram-img {
    padding-bottom: 10px;
+}
+.photos-veb {
+    display: none;
+    margin-left: 290px;  
+}
+.photo-there {
+    display: flex;
+}
+.card {
+    padding: 15px;
+    margin: 10px 0;
+    box-shadow: 0 2px 8px rgba(red, green, blue, alpha);
+}
+
+
+@media (max-width: 767px) {
+    body {
+        margin: 0;
+    }
+    .photos-veb {
+        display: flex;
+        margin-left: 270px;
+    }
+    .yozuv9 {
+        margin-left: 10px;
+        text-align: center;
+    }
+    .typewriter h1 {
+        margin-left: 2px;
+        font-size: 26px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .tugma44 {
+        margin-left: 290px;
+    }
+    .yozuv7 {
+        margin-left: 15px;
+        font-size: 20px;
+        text-align: center;
+    }
+    .ateglar {
+        display: none;
+    } 
+    #lamp {
+        display: none;
+    }
+    header {
+       font-size: 20px;
+       width: 93%;
+       height: 100px;
+    }
+    .section {
+        padding: 15px 10px;
+    }
+    section {
+        padding: 20px;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+    .ul {
+        gap: 1px;
+        font-size: 15px;
+        display: flex;
+    }
+    .tugma {
+        display: none;
+        
+    }
+    .yozuv1 { 
+        font-size: 17px;
+        height: 20px;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+    .show {
+        display: block;
+        width: 70px;
+        height: 30px;
+    }
+    .kango {
+        display: flex;
+        gap: 400px;
+        
+    }
+    .section3 {
+        flex-direction: column;
+        justify-content: none;
+        height: auto;
+    }
+    
 }

@@ -39,5 +39,3 @@ window.addEventListener('scroll', function() {
     document.getElementById('block1').style.transform = 'translateX(100px)';
   }
 });
-
-

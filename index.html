@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link rel="shortcut icon" href="./ChatGPT Image 20 июн. 2025 г., 09_40_21.png" type="image/x-icon">
 </head>
 <body> 
 
     <header>
-      
-     <h2 class="yozuv1"> <span class="span1">N</span>urshod</h2>
-      
+      <div class="kango">
+
+        <h2 class="yozuv1"> <span class="span1">N</span>urshod</h2>
+         <img class="show" src="./Group 28 (1).png" alt="">
+      </div>
    <div class="ateglar">
-      
+      <nav>
      <ul>
        <a class="headerA" href="#about" onclick="event.preventDefault(); scrollToAbout();">About</a>
        <a class="headerA" href="#experience" onclick="event.preventDefault(); scrollToExperience();">Experince</a>                                                                     
        <a class="headerA" href="#contact" onclick="event.preventDefault(); scrollToContact();">Contact</a>
       
      </ul>  
-        
+        </nav>
 
       
 
@@ -44,7 +47,8 @@
 
      
 
-     <section class="section2">
+     <section class="container">
+      <img src="https://eldordev.vercel.app/imgs/image%201.png" alt="" class="photos-veb">
       <h2 class="yozuv7">Hi, My name is</h2>
       
   <div class="typewriter">  
@@ -79,11 +83,11 @@
           <button class="tugma44">
             Reach at me!
           </button>
+          
+          
+        </section> 
 
-         
-     </section> 
-
-     <section class="section3">
+     <section class="section3 hidden">
             <div class="about-me">
               
               
@@ -115,8 +119,11 @@
     
   </div>  
   
-  <img class="pictures" src="./photo_2025-06-12_09-21-16.jpg" alt="">
-
+  <div class="image-wrapper">
+  <img src="./photo_2025-06-12_09-19-00.jpg" alt="">
+  <span class="border-line"></span>
+</div>
+  <img class="pictures" src="" alt="">
 </section>
         
 
@@ -478,12 +485,17 @@
   </script>
 
 
+<script>
+  AOS.init({
+    once: true, // faqat bir marta animatsiya bo‘lsin
+  });
+</script>
+
 
 
  
 <script src="portfolio.js"></script>
 
-
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </body>
 </html>
