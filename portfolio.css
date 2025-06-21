@@ -190,7 +190,7 @@ ul {
   animation: borderMove 1s linear infinite;
   background: linear-gradient(90deg, gray, black, white, green, white);
   background-size: 350% 350%;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   padding: 2px;
